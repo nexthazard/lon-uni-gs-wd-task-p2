@@ -1,0 +1,6 @@
+/* main.css is on everypage to keep styling consistant, will make use of css variable system to keep colors consistant on each page  each page will have it's own css for individual styling which will allow each person to style their pages in their own way but keep the core style the same on all pages */
+
+:root{
+    /* All variables are stored in root allowing them to be used on other css pages by calling var() */
+    --background-color: blue; 
+}
