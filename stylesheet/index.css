@@ -1,6 +1,8 @@
 .rideImage {
     height :400px;
     vertical-align: middle;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 .rideText {
