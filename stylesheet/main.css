@@ -14,12 +14,32 @@ h5,
 h6 {
     font-family: 'Noto Sans', Arial, Helvetica, sans-serif;
     background-color: rgb(254,207,125);
+    color: rgb(196,51,92);
+}
+h1{
+    font-size: 50px;
 }
 
 table {
     margin-left: auto;
     margin-right: auto;
     padding: 5px;
+    text-align: center;
+}
+td {
+    padding:10px
+}
+tr:nth-child(even){background-color: #f2f2f2;}
+tr:nth-child(odd){background-color: lightgray;}
+
+tr:hover {background-color: rgb(255,100,118);
+color: white;}
+
+th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  background-color:rgb(6,127,138);
+  color: white;
 }
 
 /* Header CSS */
@@ -41,13 +61,15 @@ nav {
 
 nav {
     display: inline;
-    padding: 5px;
+    padding: 5px,0,5px,0;
     margin: auto;
+    box-sizing: content-box;
 }
 
 nav a {
     padding : 5px;
     text-decoration: none;
+    color: rgb(6,127,138);
     
 }
 
@@ -92,6 +114,7 @@ footer {
 
 
 #legalDisclaimer {
+    margin-top: 20px;
     font-size: smaller;
     font-style: italic;
 }
