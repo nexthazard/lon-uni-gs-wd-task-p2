@@ -1,55 +1,97 @@
 /* main.css is on everypage to keep styling consistant, will make use of css variable system to keep colors consistant on each page  each page will have it's own css for individual styling which will allow each person to style their pages in their own way but keep the core style the same on all pages */
 
-:root{
+:root {
     /* All variables are stored in root allowing them to be used on other css pages by calling var() */
-    --background-color: blue; 
+    --background-color: blue;
 }
 
-body, h1, h2, h3, h4, h5, h6 {
-    font-family: Arial, Helvetica, sans-serif;
-  }
-/* Header CSS */
-header { grid-area: header;}
-header object {
-    float: right;
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Noto Sans', Arial, Helvetica, sans-serif;
+    background-color: rgb(254,207,125);
 }
-header {
-    width:100%;
-    height:200px;
-    padding:5px;
-}
-/* Navigation CSS */
-nav {grid-area: nav;}
 
-nav {
-    display:inline;
-    border: 1px solid white;
-    border-radius: 5px;
+table {
+    margin-left: auto;
+    margin-right: auto;
     padding: 5px;
 }
+
+/* Header CSS */
+header {
+    grid-area: header;
+}
+
+header {
+    width: 100%;
+    height: 200px;
+    padding: 5px;
+
+}
+
+/* Navigation CSS */
+nav {
+    grid-area: nav;
+}
+
+nav {
+    display: inline;
+    padding: 5px;
+    margin: auto;
+}
+
+nav a {
+    padding : 5px;
+    text-decoration: none;
+    
+}
+
 /* Main CSS */
-main {grid-area: main;}
+main {
+    grid-area: main;
+}
+
+main {
+    text-align: center;
+}
 
 /* Footer CSS */
-footer {grid-area: footer;}
+footer {
+    grid-area: footer;
+}
+
+footer {
+    text-align: center;
+}
 
 .grid-container {
     display: grid;
-    grid-template-columns:  100px auto auto auto auto 100px;
-    grid-template-areas: 
-     'header header header header header header'
-     'nav nav nav nav nav nav'
-     '. main main main main .'
-     'footer footer footer footer footer footer';
+    grid-template-columns: 100px auto auto auto auto 100px;
+    grid-template-areas:
+        'header header header header header header'
+        'nav nav nav nav nav nav'
+        '. main main main main .'
+        'footer footer footer footer footer footer';
 }
-.rideImage {
-    width: 40%;
-}
-#mainContentTextFirst {
+
+#headerImage {
     display: block;
-    text-align:  left;
+    margin-left: auto;
+    margin-right: auto;
+    height: 200px;
 }
-#mainContentImageFirst {
+
+#SiteMap {
     display: block;
-    text-align: right;
+}
+
+
+#legalDisclaimer {
+    font-size: smaller;
+    font-style: italic;
 }
