@@ -63,15 +63,24 @@ nav {
 nav {
     display: inline;
     padding: 5px,0,5px,0;
-    margin: auto;
     box-sizing: content-box;
+    margin: auto;
 }
 
 nav a {
     padding : 5px;
     text-decoration: none;
-    color: rgb(6,127,138);
-    
+    color: white;
+    background-color: rgb(6,127,138);
+/* add animation for nav bar to make the font size increase on hover*/
+    font-size: 14px;
+    transition: font-size 0.5s 0.1s;    
+}
+
+nav a:hover {
+    background-color: rgb(255,100,118);
+    color: white;
+    font-size: 36px;
 }
 
 /* Main CSS */
