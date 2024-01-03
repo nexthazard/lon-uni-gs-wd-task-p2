@@ -4,7 +4,7 @@
     /* All variables are stored in root allowing them to be used on other css pages by calling var() */
     --background-color: blue;
 }
-
+/* set the default fonts throughout, the text color and the background color to match the logo */
 body,
 h1,
 h2,
@@ -16,10 +16,12 @@ h6 {
     background-color: rgb(254,207,125);
     color: rgb(196,51,92);
 }
+/* override the h1 font size */
 h1{
     font-size: 50px;
 }
 
+/* setup defaults for tables, we want them to have some padding around the elements and the colors to alternate. When we hover over a row we want that row to change color so that it is obvious where the mouse is */
 table {
     margin-left: auto;
     margin-right: auto;
@@ -32,10 +34,8 @@ td {
 }
 tr:nth-child(even){background-color: #f2f2f2;}
 tr:nth-child(odd){background-color: lightgray;}
-
 tr:hover {background-color: rgb(255,100,118);
 color: white;}
-
 th {
   padding-top: 12px;
   padding-bottom: 12px;
@@ -43,7 +43,7 @@ th {
   color: white;
 }
 
-/* Header CSS */
+/* Style the Header tag, we want this to be a standard size on all pages. Assign it to the header definition in the grid layout */
 header {
     grid-area: header;
 }
@@ -55,7 +55,7 @@ header {
 
 }
 
-/* Navigation CSS */
+/* Style the Navigation tag, we want this to be a standard size on all pages. Assign it to the nav definition in the grid layout */
 nav {
     grid-area: nav;
 }
@@ -66,7 +66,7 @@ nav {
     box-sizing: content-box;
     margin: auto;
 }
-
+/* stick some boxes around the links in the nav bar and animate them so that they grow when you hover over them*/
 nav a {
     padding : 5px;
     text-decoration: none;
@@ -83,7 +83,7 @@ nav a:hover {
     font-size: 36px;
 }
 
-/* Main CSS */
+/* Style the main tag, we want this to be a standard size on all pages. Assign it to the main definition in the grid layout */
 main {
     grid-area: main;
 }
@@ -92,7 +92,7 @@ main {
     text-align: center;
 }
 
-/* Footer CSS */
+/* Style the footer tag, we want this to be a standard size on all pages. Assign it to the footer definition in the grid layout */
 footer {
     grid-area: footer;
 }
@@ -100,7 +100,7 @@ footer {
 footer {
     text-align: center;
 }
-
+/* Create the grid layout, it should be that the first 100% is the header then 100% of the nav then the main section has some padding to keep it more to the center and finally the footer is 100% again */
 .grid-container {
     display: grid;
     grid-template-columns: 100px auto auto auto auto 100px;
@@ -110,19 +110,19 @@ footer {
         '. main main main main .'
         'footer footer footer footer footer footer';
 }
-
+/* control the height of the header image */
 #headerImage {
     display: block;
     margin-left: auto;
     margin-right: auto;
     height: 200px;
 }
-
+/* make the site map links appear as a block */
 #SiteMap {
     display: block;
 }
 
-
+/* make the legal disclaimer smaller and italic */
 #legalDisclaimer {
     margin-top: 20px;
     font-size: smaller;

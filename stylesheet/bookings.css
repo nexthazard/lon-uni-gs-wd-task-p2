@@ -1,3 +1,4 @@
+/* control what happens with the drop down select buttons */
 select {
     width: 100%;
     padding: 16px 20px;
@@ -9,7 +10,8 @@ select {
     margin-top: 10px;
     margin-bottom: 10px;
   }
-  input[type=button], input[type=submit], input[type=reset] {
+/* Style our input forms */
+input[type=button], input[type=submit], input[type=reset] {
     background-color: rgb(255,100,118);
     border: none;
     color: white;
