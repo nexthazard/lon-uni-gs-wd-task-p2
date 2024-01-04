@@ -62,7 +62,7 @@ nav {
 
 nav {
     display: inline;
-    padding: 5px,0,5px,0;
+    padding: 5px 0 5px 0;
     box-sizing: content-box;
     margin: auto;
 }
