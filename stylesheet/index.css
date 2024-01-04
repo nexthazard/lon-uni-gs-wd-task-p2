@@ -1,9 +1,10 @@
 /* scale the ride image and put some margins around it */
 .rideImage {
-    width :65%;
+    max-width :65%;
     vertical-align: middle;
     margin-left: 20px;
     margin-right: 20px;
+    max-height: 600px;
 }
 /* align the text so that it appears in the middle of the image it is alongside */
 .rideText {
