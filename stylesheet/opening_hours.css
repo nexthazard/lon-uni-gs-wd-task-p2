@@ -1,1 +1,21 @@
 /* stylesheet to hold any styles specific to the opening_hours page*/
+
+
+/* build an arrow to overlay on the map */
+#triangle-down {
+    position: absolute;
+    z-index: 2;
+	left: 41.5%;
+	bottom: 46.5%;
+	border-left: 25px solid transparent;
+	border-right: 25px solid transparent;
+	border-top: 50px solid rgb(196, 8, 8);
+}
+#container {
+        position: relative;
+        width: 100%;
+        margin-bottom: 50px;
+}
+#mapToLocation {
+    width: 80%;
+}
