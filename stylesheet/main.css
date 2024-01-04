@@ -12,9 +12,9 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: 'Noto Sans', Arial, Helvetica, sans-serif;
+    font-family: 'Crimson Text', Arial, Helvetica, sans-serif;
     background-color: rgb(254,207,125);
-    color: rgb(196,51,92);
+    color: #CF7DFE;
 }
 /* override the h1 font size */
 h1{
