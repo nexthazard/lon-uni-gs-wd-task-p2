@@ -1,27 +1,30 @@
 /* control what happens with the drop down select buttons */
 select {
-    width: 100%;
-    padding: 16px 20px;
-    border: none;
-    border-radius: 4px;
-    background-color: rgb(6,127,138);
-    color: white;
-    text-align: center;
-    margin-top: 10px;
-    margin-bottom: 10px;
-  }
+  width: 100%;
+  padding: 16px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: rgb(6, 127, 138);
+  color: white;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
 /* Style our input forms */
-input[type=button], input[type=submit], input[type=reset] {
-    background-color: rgb(255,100,118);
-    border: none;
-    color: white;
-    padding: 10px 32px;
-    text-decoration: none;
-    margin: 10px 10px;
-    cursor: pointer;
-  }
-#heroImage
-{
+input[type=button],
+input[type=submit],
+input[type=reset] {
+  background-color: rgb(255, 100, 118);
+  border: none;
+  color: white;
+  padding: 10px 32px;
+  text-decoration: none;
+  margin: 10px 10px;
+  cursor: pointer;
+}
+
+#heroImage {
   width: 80%;
   margin-top: 20px;
 }

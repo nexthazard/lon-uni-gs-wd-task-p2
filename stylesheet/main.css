@@ -4,6 +4,7 @@
     /* All variables are stored in root allowing them to be used on other css pages by calling var() */
     --background-color: blue;
 }
+
 /* set the default fonts throughout, the text color and the background color to match the logo */
 body,
 h1,
@@ -13,11 +14,12 @@ h4,
 h5,
 h6 {
     font-family: 'Crimson Text', Arial, Helvetica, sans-serif;
-    background-color: rgb(254,207,125);
+    background-color: rgb(254, 207, 125);
     color: #CF7DFE;
 }
+
 /* override the h1 font size */
-h1{
+h1 {
     font-size: 50px;
 }
 
@@ -28,19 +30,30 @@ table {
     padding: 5px;
     text-align: center;
 }
+
 td {
-    padding:10px;
+    padding: 10px;
     min-width: 100px;
 }
-tr:nth-child(even){background-color: #f2f2f2;}
-tr:nth-child(odd){background-color: lightgray;}
-tr:hover {background-color: rgb(255,100,118);
-color: white;}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:nth-child(odd) {
+    background-color: lightgray;
+}
+
+tr:hover {
+    background-color: rgb(255, 100, 118);
+    color: white;
+}
+
 th {
-  padding-top: 12px;
-  padding-bottom: 12px;
-  background-color:rgb(6,127,138);
-  color: white;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background-color: rgb(6, 127, 138);
+    color: white;
 }
 
 /* Style the Header tag, we want this to be a standard size on all pages. Assign it to the header definition in the grid layout */
@@ -66,19 +79,20 @@ nav {
     box-sizing: content-box;
     margin: auto;
 }
+
 /* stick some boxes around the links in the nav bar and animate them so that they grow when you hover over them*/
 nav a {
-    padding : 5px;
+    padding: 5px;
     text-decoration: none;
     color: white;
-    background-color: rgb(6,127,138);
-/* add animation for nav bar to make the font size increase on hover*/
+    background-color: rgb(6, 127, 138);
+    /* add animation for nav bar to make the font size increase on hover*/
     font-size: 14px;
-    transition: font-size 0.5s 0.1s;    
+    transition: font-size 0.5s 0.1s;
 }
 
 nav a:hover {
-    background-color: rgb(255,100,118);
+    background-color: rgb(255, 100, 118);
     color: white;
     font-size: 36px;
 }
@@ -100,6 +114,7 @@ footer {
 footer {
     text-align: center;
 }
+
 /* Create the grid layout, it should be that the first 100% is the header then 100% of the nav then the main section has some padding to keep it more to the center and finally the footer is 100% again */
 .grid-container {
     display: grid;
@@ -110,6 +125,7 @@ footer {
         '. main main main main .'
         'footer footer footer footer footer footer';
 }
+
 /* control the height of the header image */
 #headerImage {
     display: block;
@@ -117,6 +133,7 @@ footer {
     margin-right: auto;
     height: 200px;
 }
+
 /* make the site map links appear as a block */
 #SiteMap {
     display: block;
