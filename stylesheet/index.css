@@ -10,3 +10,166 @@
 .rideText {
     vertical-align: middle;
 }
+
+.rideImageMain {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    position: absolute;
+    z-index: -1;
+}
+
+.mainContent {
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(254, 207, 125, 0.4) 98%); 
+}
+
+.mainContentText {
+    display: flex;
+    font-size: 34px;
+    width: 40%;
+    left: 10%;
+    bottom: 18%;
+    position: absolute;
+    background-color: rgb(9, 177, 192);
+    color: white;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.mainContentButton {
+    left: 10%;
+    bottom: 10%;
+    position: absolute;
+    background-color: rgb(227, 175, 86);
+    border-radius: 1px;
+    padding: 20px;
+    border: 0;
+    transition: all 0.5s 0.1s;
+}
+
+.mainContentButton:hover {
+    cursor: pointer;
+    background-color: rgb(204, 152, 63);
+    border-radius: 50px;
+    transition: all 0.5s 0.1s;
+}
+
+.mainHeader {
+    font-size: 50px;
+    width: 100%;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: white;
+    margin-bottom: 5%;
+}
+
+.mainTitle {
+    font-size: 50px;
+}
+
+.ridesContent {
+    display: flex;
+    width: 100%;
+    align-content: center;
+    justify-content: center;
+    margin-bottom: 10%;
+}
+
+.ridesCard {
+    display: flex;
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    width: 80%;
+    max-width: 900px;
+    justify-content: center;
+    align-items: center;
+}
+
+.rideImage, .rideText {
+    width: 50%;
+    height: 100%;
+    border-radius: 10px;
+    min-width: 250px;
+    min-height: 450px;
+}
+
+.rideImage {
+    object-fit: cover;
+}
+
+.rideTitle {
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.rideDescription {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.reviewPerson {
+    display: flex;
+    align-content: center;
+}
+
+.reviewImage {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.reviewName {
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.ridesText {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    max-width: 450px;
+    gap: 5rem;
+}
+
+.reviewStars {
+    color: rgb(255, 174, 0);
+}
+
+.footerContainer {
+    display: flex;
+    flex-direction: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 20px;
+    width: 80%;
+    border-radius: 25px;
+}
+
+#SiteMap {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-family: monospace;
+    font-size: 20px;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}

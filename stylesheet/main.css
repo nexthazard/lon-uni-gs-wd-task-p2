@@ -66,22 +66,30 @@ nav {
     box-sizing: content-box;
     margin: auto;
 }
+
+nav-top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
 /* stick some boxes around the links in the nav bar and animate them so that they grow when you hover over them*/
-nav a {
+/* nav a {
     padding : 5px;
     text-decoration: none;
     color: white;
-    background-color: rgb(6,127,138);
+    background-color: rgb(6,127,138); */
 /* add animation for nav bar to make the font size increase on hover*/
-    font-size: 14px;
+/*     font-size: 14px;
     transition: font-size 0.5s 0.1s;    
-}
+} */
 
-nav a:hover {
+/* nav a:hover {
     background-color: rgb(255,100,118);
     color: white;
     font-size: 36px;
-}
+} */
+
 
 /* Style the main tag, we want this to be a standard size on all pages. Assign it to the main definition in the grid layout */
 main {

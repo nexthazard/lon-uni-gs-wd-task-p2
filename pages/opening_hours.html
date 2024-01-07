@@ -9,8 +9,9 @@
     <meta name="description" content="Free Web tutorials">
     <meta name="keywords" content="HTML, CSS, JavaScript">
     <meta http-equiv="refresh" content="30">
-    <link rel="stylesheet" href="../stylesheet/main.css">
+    <link rel="stylesheet" href="../stylesheet/main_2.css">
     <link rel="stylesheet" href="../stylesheet/opening_hours.css">
+    <link rel="stylesheet" href="../stylesheet/index.css" />
     <link href='https://fonts.googleapis.com/css?family=Crimson+Text' rel='stylesheet'>
     <!-- Required a Title -->
     <title>CM1040 Land Opening Hours</title>
@@ -18,15 +19,32 @@
 
 <body class="grid-container">
     <!-- Header block to hold site logo-->
-    <header>
-        <img src="../static/images/logo/MainLogo.jpg" alt="#cm1040 main logo" id="headerImage">
-    </header>
-    <!-- Navigation bar to hold links to other pages-->
-    <nav>
-        <a href="../index.html">Home</a>
-        <a href="./bookings.html">Bookings</a>
-        <a href="./opening_hours.html">Opening Hours</a>
-    </nav>
+    <header class="header">
+        <div class="nav-container">
+          <a href="index.html" id="logo">
+            <img
+              src="../static/images/logo/MainLogoNoBG.png"
+              alt="#cm1040 main logo"
+              id="headerImage"
+            />
+          </a>
+          <!-- Navigation bar to hold links to other pages-->
+          <nav class="nav-top">
+            <a class="genericButton nav-button" href="../index.html">
+              <p>Home</p>
+            </a>
+            <a class="genericButton nav-button" href="./bookings.html">
+              <p>Bookings</p>
+            </a>
+            <a class="genericButton nav-button" href="./opening_hours.html">
+              <p>Opening Hours</p>
+            </a>
+            <a class="genericButton nav-book" href="../index.html">
+              <p>Book Now</p>
+            </a>
+          </nav>
+        </div>
+      </header>
     <!-- Content Here  to hold table of opening hours and map to location-->
     <main>
         <div id="openingHours">
@@ -86,13 +104,26 @@
     </main>
     <!-- footer block to hold sitemap and legal statement-->
     <footer>
-        <nav id="SiteMap"><a href="../index.html">Home</a>
+        <div class="footerContainer">
+          <h2 class="footerTitle">#CM1040 Land</h2>
+          <a href="../index.html" id="logo">
+            <img
+              src="../static/images/logo/MainLogoNoBG.png"
+              alt="#cm1040 main logo"
+              id="headerImage"
+            />
+          </a>
+          <nav id="SiteMap">
+            <a href="../index.html">Home</a>
             <a href="./bookings.html">Bookings</a>
             <a href="./opening_hours.html">Opening Hours</a>
-        </nav>
-        <div id="legalDisclaimer">Use of this site assumes compliance with our terms and conditions which you definitely
-            read right?</div>
-    </footer>
+          </nav>
+        </div>
+        <div id="legalDisclaimer">
+          Use of this site assumes compliance with our terms and conditions which
+          you definitely read right?
+        </div>
+      </footer>
 </body>
 
 </html>
