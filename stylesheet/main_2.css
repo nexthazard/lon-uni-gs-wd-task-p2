@@ -3,7 +3,7 @@ body {
     padding: 0;
     gap: 0;
     width: 100%;
-    background-color: rgb(254,207,125);
+    background-color: rgb(254, 207, 125);
 }
 
 main {
@@ -12,7 +12,7 @@ main {
     align-items: center;
     width: 100%;
     height: 100%;
-    background-color: rgb(254,207,125);
+    background-color: rgb(254, 207, 125);
 }
 
 h1,
@@ -72,7 +72,7 @@ header {
 }
 
 .nav-button {
-    padding : 10px;
+    padding: 10px;
     height: 65%;
     color: rgb(51, 51, 51);
     background-color: transparent;
@@ -82,7 +82,6 @@ header {
 
 .nav-button:hover {
     border-bottom: 2px solid rgb(0, 0, 0);
-    scale: 1.2;
     color: rgb(0, 0, 0);
     transition: all 0.5s 0.1s;
 }
@@ -98,13 +97,62 @@ header {
 
 .nav-book:hover {
     cursor: pointer;
-    background-color: rgb(6,127,138);
+    background-color: rgb(6, 127, 138);
     border-radius: 25px;
     transition: all 0.5s 0.1s;
 }
 
-#headerImage {
+.headerImage {
     padding: 15px;
     width: 120px;
     height: 120px;
+}
+
+/* setup defaults for tables, we want them to have some padding around the elements and the colors to alternate. When we hover over a row we want that row to change color so that it is obvious where the mouse is */
+table {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px;
+    text-align: center;
+}
+
+td {
+    padding: 10px;
+    min-width: 100px;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:nth-child(odd) {
+    background-color: lightgray;
+}
+
+tr:hover {
+    background-color: rgb(255, 100, 118);
+    color: white;
+}
+
+th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background-color: rgb(6, 127, 138);
+    color: white;
+}
+
+/* make the site map links appear as a block */
+#SiteMap {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-family: monospace;
+    font-size: 20px;
+}
+
+/* make the legal disclaimer smaller and italic */
+#legalDisclaimer {
+    margin-top: 20px;
+    font-size: smaller;
+    font-style: italic;
 }

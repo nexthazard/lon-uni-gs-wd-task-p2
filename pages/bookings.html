@@ -2,207 +2,194 @@
 
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Free Web tutorials" />
-    <meta name="keywords" content="HTML, CSS, JavaScript" />
-    <meta http-equiv="refresh" content="30" />
-    <link rel="stylesheet" href="../stylesheet/bookings.css" />
-    <link rel="stylesheet" href="../stylesheet/index.css" />
-    <link rel="stylesheet" href="../stylesheet/main_2.css" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Crimson+Text"
-      rel="stylesheet"
-    />
-    <!-- Required a Title -->
-    <title>CM1040 Land Bookings</title>
-  </head>
 
-  <body class="grid-container">
-    <!-- Header block to hold site logo-->
-    <header class="header">
-      <div class="nav-container">
-        <a href="index.html" id="logo">
-          <img
-            src="../static/images/logo/MainLogoNoBG.png"
-            alt="#cm1040 main logo"
-            id="headerImage"
-          />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Free Web tutorials" />
+  <meta name="keywords" content="HTML, CSS, JavaScript" />
+  <meta http-equiv="refresh" content="30" />
+  <link rel="stylesheet" href="../stylesheet/bookings.css" />
+  <link rel="stylesheet" href="../stylesheet/index.css" />
+  <link rel="stylesheet" href="../stylesheet/main_2.css" />
+  <link href="https://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet" />
+  <!-- Required a Title -->
+  <title>CM1040 Land Bookings</title>
+</head>
+
+<body class="grid-container">
+  <!-- Header block to hold site logo-->
+  <header class="header">
+    <div class="nav-container">
+      <a href="../index.html" class="logo">
+        <img src="../static/images/logo/MainLogoNoBG.png" alt="#cm1040 main logo" class="headerImage" />
+      </a>
+      <!-- Navigation bar to hold links to other pages-->
+      <nav class="nav-top">
+        <a class="genericButton nav-button" href="../index.html">
+          <p>Home</p>
         </a>
-        <!-- Navigation bar to hold links to other pages-->
-        <nav class="nav-top">
-          <a class="genericButton nav-button" href="../index.html">
-            <p>Home</p>
-          </a>
-          <a class="genericButton nav-button" href="./bookings.html">
-            <p>Bookings</p>
-          </a>
-          <a class="genericButton nav-button" href="./opening_hours.html">
-            <p>Opening Hours</p>
-          </a>
-          <a class="genericButton nav-book" href="../index.html">
-            <p>Book Now</p>
-          </a>
-        </nav>
-      </div>
-    </header>
-    <!-- Content Here, Table to hold the prices and form for buying tickets -->
-    <main>
-      <img
-        src="../static/images/marketing/ridefeet.jpg"
-        alt="picture of feet on rollercoaster"
-        id="heroImage"
-      />
-      <!-- Table of the prices of tickets based on ages -->
-      <h2>Pricing table</h2>
-      <table>
-        <tr>
-          <th>Age</th>
-          <th>Price</th>
-        </tr>
-        <tr>
-          <td>0-6</td>
-          <td>$10</td>
-        </tr>
-        <tr>
-          <td>7-10</td>
-          <td>$11</td>
-        </tr>
-        <tr>
-          <td>11-16</td>
-          <td>$16</td>
-        </tr>
-        <tr>
-          <td>17-30</td>
-          <td>$30</td>
-        </tr>
-        <tr>
-          <td>31-40</td>
-          <td>$20</td>
-        </tr>
-        <tr>
-          <td>41-70</td>
-          <td>$5</td>
-        </tr>
-        <tr>
-          <td>71-150</td>
-          <td>$0</td>
-        </tr>
-      </table>
-      <br />
-      <!-- Form to hold to allow interaction for ordering of tickets -->
-      <h2>Enter the quantity of tickets you want for each age</h2>
-      <form action="#">
-        <label for="0to6">0-6:</label>
-        <select name="0-6" id="0to6">
-          <option value="0">0</option>
-          <option value="1">1</option>
-          <option value="2">2</option>
-          <option value="3">3</option>
-          <option value="4">4</option>
-          <option value="5">5</option>
-          <option value="6">6</option>
-          <option value="7">7</option>
-          <option value="8">8</option>
-          <option value="9">9</option>
-        </select>
-        <br />
-        <label for="7to10">7-10:</label>
-        <select name="7-10" id="7to10">
-          <option value="0">0</option>
-          <option value="1">1</option>
-          <option value="2">2</option>
-          <option value="3">3</option>
-          <option value="4">4</option>
-          <option value="5">5</option>
-          <option value="6">6</option>
-          <option value="7">7</option>
-          <option value="8">8</option>
-          <option value="9">9</option>
-        </select>
-        <br />
-        <label for="11to16">11-16:</label>
-        <select name="11-16" id="11to16">
-          <option value="0">0</option>
-          <option value="1">1</option>
-          <option value="2">2</option>
-          <option value="3">3</option>
-          <option value="4">4</option>
-          <option value="5">5</option>
-          <option value="6">6</option>
-          <option value="7">7</option>
-          <option value="8">8</option>
-          <option value="9">9</option>
-        </select>
-        <br />
-        <label for="17to30">17-30:</label>
-        <select name="17-30" id="17to30">
-          <option value="0">0</option>
-          <option value="1">1</option>
-          <option value="2">2</option>
-          <option value="3">3</option>
-          <option value="4">4</option>
-          <option value="5">5</option>
-          <option value="6">6</option>
-          <option value="7">7</option>
-          <option value="8">8</option>
-          <option value="9">9</option>
-        </select>
-        <br />
-        <label for="31to40">31-40:</label>
-        <select name="31-40" id="31to40">
-          <option value="0">0</option>
-          <option value="1">1</option>
-          <option value="2">2</option>
-          <option value="3">3</option>
-          <option value="4">4</option>
-          <option value="5">5</option>
-          <option value="6">6</option>
-          <option value="7">7</option>
-          <option value="8">8</option>
-          <option value="9">9</option>
-        </select>
-        <br />
-        <label for="71to150">71-150:</label>
-        <select name="71-150" id="71to150">
-          <option value="0">0</option>
-          <option value="1">1</option>
-          <option value="2">2</option>
-          <option value="3">3</option>
-          <option value="4">4</option>
-          <option value="5">5</option>
-          <option value="6">6</option>
-          <option value="7">7</option>
-          <option value="8">8</option>
-          <option value="9">9</option>
-        </select>
-        <br />
-        <input type="submit" value="Submit" />
-      </form>
-      <br />
-    </main>
-    <!-- footer block to hold sitemap and legal statement-->
-    <footer>
-      <div class="footerContainer">
-        <h2 class="footerTitle">#CM1040 Land</h2>
-        <a href="../index.html" id="logo">
-          <img
-            src="../static/images/logo/MainLogoNoBG.png"
-            alt="#cm1040 main logo"
-            id="headerImage"
-          />
+        <a class="genericButton nav-button" href="./bookings.html">
+          <p>Bookings</p>
         </a>
-        <nav id="SiteMap">
-          <a href="../index.html">Home</a>
-          <a href="./bookings.html">Bookings</a>
-          <a href="./opening_hours.html">Opening Hours</a>
-        </nav>
-      </div>
-      <div id="legalDisclaimer">
-        Use of this site assumes compliance with our terms and conditions which
-        you definitely read right?
-      </div>
-    </footer>
-  </body>
+        <a class="genericButton nav-button" href="./opening_hours.html">
+          <p>Opening Hours</p>
+        </a>
+        <a class="genericButton nav-book" href="../index.html">
+          <p>Book Now</p>
+        </a>
+      </nav>
+    </div>
+  </header>
+  <!-- Content Here, Table to hold the prices and form for buying tickets -->
+  <main>
+    <img src="../static/images/marketing/ridefeet.jpg" alt="picture of feet on rollercoaster" id="heroImage" />
+    <!-- Table of the prices of tickets based on ages -->
+    <h2>Pricing table</h2>
+    <table>
+      <tr>
+        <th>Age</th>
+        <th>Price</th>
+      </tr>
+      <tr>
+        <td>0-6</td>
+        <td>$10</td>
+      </tr>
+      <tr>
+        <td>7-10</td>
+        <td>$11</td>
+      </tr>
+      <tr>
+        <td>11-16</td>
+        <td>$16</td>
+      </tr>
+      <tr>
+        <td>17-30</td>
+        <td>$30</td>
+      </tr>
+      <tr>
+        <td>31-40</td>
+        <td>$20</td>
+      </tr>
+      <tr>
+        <td>41-70</td>
+        <td>$5</td>
+      </tr>
+      <tr>
+        <td>71-150</td>
+        <td>$0</td>
+      </tr>
+    </table>
+    <br />
+    <!-- Form to hold to allow interaction for ordering of tickets -->
+    <h2>Enter the quantity of tickets you want for each age</h2>
+    <form action="#">
+      <label for="0to6">0-6:</label>
+      <select name="0-6" id="0to6">
+        <option value="0">0</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+      </select>
+      <br />
+      <label for="7to10">7-10:</label>
+      <select name="7-10" id="7to10">
+        <option value="0">0</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+      </select>
+      <br />
+      <label for="11to16">11-16:</label>
+      <select name="11-16" id="11to16">
+        <option value="0">0</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+      </select>
+      <br />
+      <label for="17to30">17-30:</label>
+      <select name="17-30" id="17to30">
+        <option value="0">0</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+      </select>
+      <br />
+      <label for="31to40">31-40:</label>
+      <select name="31-40" id="31to40">
+        <option value="0">0</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+      </select>
+      <br />
+      <label for="71to150">71-150:</label>
+      <select name="71-150" id="71to150">
+        <option value="0">0</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+      </select>
+      <br />
+      <input type="submit" value="Submit" />
+    </form>
+    <br />
+  </main>
+  <!-- footer block to hold sitemap and legal statement-->
+  <footer>
+    <div class="footerContainer">
+      <h2 class="footerTitle">#CM1040 Land</h2>
+      <a href="../index.html" class="logo">
+        <img src="../static/images/logo/MainLogoNoBG.png" alt="#cm1040 main logo" class="headerImage" />
+      </a>
+      <nav id="SiteMap">
+        <a href="../index.html">Home</a>
+        <a href="./bookings.html">Bookings</a>
+        <a href="./opening_hours.html">Opening Hours</a>
+      </nav>
+    </div>
+    <div id="legalDisclaimer">
+      Use of this site assumes compliance with our terms and conditions which
+      you definitely read right?
+    </div>
+  </footer>
+</body>
+
 </html>

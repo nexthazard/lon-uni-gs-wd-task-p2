@@ -26,5 +26,9 @@ input[type=reset] {
 
 #heroImage {
   width: 80%;
-  margin-top: 20px;
+  margin-top: 160px;
+}
+
+form {
+  text-align: center;
 }
